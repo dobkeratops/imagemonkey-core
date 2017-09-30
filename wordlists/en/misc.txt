@@ -14,3 +14,10 @@ bullet
 car
 tree
 pizza
+domestic
+urban
+office
+nature
+rural
+industrial
+people
