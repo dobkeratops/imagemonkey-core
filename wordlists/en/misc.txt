@@ -14,3 +14,17 @@ bullet
 car
 tree
 pizza
+headlamp
+grille
+tail light
+wing mirror
+wheel arch
+hub cap
+bonnet
+exhaust pipe
+grille
+steering wheel
+gear stick
+seat belt
+motorcycle
+cabin (truck)
