@@ -14,3 +14,12 @@ bullet
 car
 tree
 pizza
+workshop
+kitchen 
+garage
+docks
+agriculture
+medical
+garden
+indoor
+outdoor
