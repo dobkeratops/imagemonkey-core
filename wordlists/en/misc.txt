@@ -14,3 +14,60 @@ bullet
 car
 tree
 pizza
+sign post
+lamp post
+utility pole
+bush
+truck
+bus
+bicycle
+wheel
+human
+face
+hand
+foot
+eye
+mouth
+arm
+leg
+fork
+table
+chair
+Shelf (storage)
+fork
+ladder
+traffic lights
+waste bin
+Skip (container)
+light switch
+desk lamp
+wall light
+light bulb
+electric socket
+electric plug
+computer keyboard
+computer mouse
+laptop computer
+crane
+train
+tram
+rail
+electricity pylon
+tap
+Filling station
+house
+roof
+window
+door
+fence
+wall
+curbstone
+grass
+leaves
+tarmac
+gravel
+rock
+rubble
+trash
+tire
+
