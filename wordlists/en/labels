@@ -1,0 +1,413 @@
+{
+	“vehicle”:{ isa:[“machine”]},
+	“wheeled vehicle”:{
+		isa:[“vehicle”],
+		has:[“wheel”],
+		plural:["traffic"]
+	},
+	“car”:{
+		isa:[”wheeled vehicle”],
+		synonyms:["automobile"],
+		has:[
+			“wheels”,”bonnet”,”headlights”,”tail lights”,
+			”wing mirrors”,”door”,”windscreen”,
+			”window”,”badge”,”license plate”,”grille”,
+			“exhaust”,”roof”,"seat","stearing wheel","dashboard"]
+		examples:[
+			“hatchback”,”SUV”,”sports car”,”grand tourer”,
+			”saloon”,”sedan”,”fastback”,”convertible”,”estate”,"coupe",
+			”minivan”,”people carrier”,"pickup truck"
+		],
+		states:[“parked”,”driving”,”open”}
+	},
+	“truck”:{isa:[”wheeled vehicle”],synonyms:["lorry"]},
+	"articulated vehicle":{isa:{"vehicle"}},
+	"passenger vehicle":{isa:{"vehicle"}},
+	"bus":{isa:["passenger vehicle"]},
+	"trailer":{isa:["vehicle"]},
+	"semi-trailer":{isa:["trailer"]},
+	“semi-trailer truck”:{
+		isa:[“truck”,"articulated vehicle"],
+		has:[“cabin”,”semi-trailer”],
+		synonyms:["articulated lorry"]
+	},
+	"tipping truck":{isa:["truck"]},
+	"garbage truck":{isa:["truck"]},
+	“agricultural vehicle”:{isa:[vehicle]},
+	“tractor:{isa:[“agricultural vehicle”]},
+	“combine harvester”:{isa:[“agricultural vehicle”]},
+	"heavy equipment":{
+		isa:["machine"],
+		examples:["digger","bulldozer","excavator","road roller"]
+	},
+	"excavator":{
+		isa:["heavy equipment"],
+		has:["shovel","digger arm","hydraulic ram","catepillar tracks"],
+		examples:["large excavator","mini excavator"]
+	},
+	"bulldozer":{
+		isa:["heavy equipment"],
+		has:["shovel","hydraulic ram","catepillar tracks"]
+	},
+
+	“pedal powered vehicle”:{
+		isa:[”vehicle”],
+		has:[“pedal”,”handlebars”,”saddle”]
+	},
+	“tricycle”:{isa:[“pedal powered vehicle”]}
+	"two wheeled vehicle":{
+		isa:"vehicle"},
+		has:["wheel"]
+	}
+	“bicycle”:{
+		isa:[“two wheeled vehicle”,”pedal powered vehicle”],
+		has:[“wheel”,”handlebars”,”brake lever”,”gear lever”,”saddle”,”chain”,”mud guard”,”pedal”,”derailleur”,”chainring”,”frame”,"mudguard"],
+		examples:[“recumbent bike”,”road bike”,”touring bike”,"hybrid bike",”city bike”,”mountain bike”,”bmx”,”tandem”,”track bike”]
+	},
+	"road bike":{isa:{"bicycle"},synonyms:["racing bike"],has:["drop handlebars"]},
+	"handlebars:{examples:["drop handlebars","flat handlebar","riser bar","bullhorn bar","tri bars"]},
+	“motor bike”:{
+		isa:[“two wheeld vehicle”],
+		has:[“handlebars”,”saddle”,”exhaust”,”fuel tank”,”engine”]
+	},
+	“motor scooter”:{isa:["motor bike"]},
+	“bodypart”:{
+		examples:[“head”,”tail”,”arm”,”leg”,”foot”,”hand”,”neck”,”torso”,"shoulder","hips","spine"]
+	},
+	"arm":{isa:["bodypart"],has:["hand","wrist","elbow","forearm","upper arm"]}
+	"leg":{isa:["bodypart"],has:["foot","ankle","knee","shin","thigh"]}
+	“leg”:{
+		examples:[“foreleg”,”hind leg”]
+	},
+	“head”:{
+		isa:[“bodypart”],
+		has:[“eye”,”mouth”,”ear”,”nose”]
+	},
+	“quadruped”:{
+		isa:[“animal”],
+		has:[“head”,”tail”,”forelegs”,”hind legs”],
+	},
+	“dog”:{
+		isa:[“animal”,”quadruped”,”domesticated”,”carnivore”],
+		examples:["labrador","terrier","poodle","german shephard","bulldog"]
+	},
+	"livestock":{
+		isa:["animal"],
+		examples:["sheep","cow","pig"]
+	},
+	"horse":{isa:["quadruped","mamal","domesticated"]},
+	"donkey":{isa:["quadruped","mamal","domesticated"]},
+	"vertebrate":{examples:["mamal","reptile","fish","bird"]}
+	"invertebrate":{examples:["worm","molusc","insect","arachnid"]}
+	“animal”:{ isa:[“organism”],examples:["vertebrate","invertebrate"]},
+	“carnivore”:{ isa:[“organism”]},
+	"arthropod":{isa:["invertebrate"],has:["exoskeleton"]}
+	"insect":{isa:["arthropod"],examples:["ant","beetle","bee","wasp","butterfly","earwig"]},
+	"spider:{isa:["arthropod"]},
+	"snail":{isa:["molusc"]},
+	"crab":{isa:["arthropod"],has:["pincer"]},
+	"lobster":{isa:["arthropod"],has:["pincer"]},
+	“feline”:{
+		isa:[“quadruped”,”animal”,”carnivore”]
+	},
+	“domestic cat”:{
+		isa:[“felinae”]
+	},
+	“big cat”:{
+		isa:[“felinae”],
+		examples:["lion","tiger","panther","cheetah","lynx"]
+	},
+	“machine”:{
+		isa:[“man made object“]
+	},
+	“tool”:{
+		isa:[“man made object”]
+	},
+	“hammer”:{
+		isa:[“tool”],
+		has:[“handle”]
+	},
+	"cutting tool":{isa:["tool"], has:["blade","handle"]},
+	"axe":{isa:["cutting tool"]},
+	"saw":{isa:["cutting tool"]},
+	"hacksaw":{isa:["saw"]},
+
+	“spanner”:{
+		isa:[“tool”],
+		has:[“handle”]
+	},
+	“drill”:{isa:”tool”,has:["drill bit"]},
+	“handdrill”:{isa:[”drill”],has:["hand crank"]},
+	“powerdrill”:{isa:[”drill”]},
+
+	“marque":{
+		examples:[
+			”renault”,"citroen",
+			"volkswagen",”bmw”,”mercedes”,"audi","porsche",
+			“fiat”,"ferrari","maserati","lamborghini",
+			"ford",“chevrolet”,”general motors”,
+			"hyundai",”mitsubishi”,”acura”,”nissan”,"toyoya","mazda","subaru",
+			”rolls royce”,”jaguar”,"bentley"]
+	}
+	“mid engine sportscar”:{
+		isa:[“sportscar”],
+		examples:["porsche boxster","porsche cayman","lotus elise"],
+	},
+	“rear engine sportscar”:{
+		isa:[“sportscar”],
+		examples:[“porsche 911”]
+	},
+	“furniture”:{examples:[“table”,”chair”,”bench”,”stool”,”bed”,”cupboard”,”footrest”,”sofa”,”desk”]}
+	“dining table”:{isa:[“table”]}
+	“desk”:{isa:[“table”]}
+	“round table”:{isa:[“table”]}
+	“cutlery”:{isa:[“tool”],examples:[“knife”,”fork”,”spoon”,”spork”]}
+	“carving knife”:{isa:[”knife”]}
+	"dinner plate":{},
+	"bowl":{},
+	"serving bowl":{},
+	"cup":{},
+	"mug":{},
+	"jug":{},
+	"coffee machine":{},
+	"kettle":{},
+	"microwave oven":{},
+	"hob":{},
+	"gill":{},
+	"sink":{},
+	"bathtub":{},
+	"toilet":{},
+	"bottle":{examples:["glass bottle","wine bottle","plastic bottle"]},
+	"jerrycan":{},
+	"toolbox":{},
+	"garden shed":{},
+	"fence":{examples:["picket fence","wire fence","wooden fence","metal fence"]},
+	"handrail":{},
+	"steps":{},
+	"staircase":{},
+	"escalator":{},
+	"elevator":{},
+	“aircraft”:{
+		isa:[“vehicle”],
+		states:[“parked”,”taxying”,”take off”,”landing”,”flying”]
+	}
+	“helicopter”:{
+		isa:[“aircraft”],
+		has:[“cockpit”,”tail boom”,”tail rotor”,”rotor blades”,”landing gear”]
+	}
+	“aeroplane”:{
+		isa:[“aircraft”],
+		has:[“wing”,”cockpit”,”tail fin”]
+	}
+	“glider”:{isa:[”aeroplane”]},
+	“jet aircraft”:{isa:[”aeroplane”],has:[“jet engine”]},
+	“passenger jet”:{isa:[”jet aircraft”],has:[“passenger window”]},
+	“private jet”:{isa:[”passenger jet”]},
+	"hot air baloon":{isa:["aircraft"]},
+	"airship":{isa:["aircraft"]},
+	"quadcopter":{isa:["aircraft"]},
+	“jet airliner”:{isa:[”aircraft”]},
+	“light aircraft”:{
+		isa:[”aeroplane”],
+		has:[“propeller”]
+	}
+	“fighter jet”:{
+		isa:”jet aircraft”,
+		examples:[“f16”,”mig”,”eurofighter typhoon”]
+	},
+	“plant”:{
+		isa:[“organism”], 
+		examples:[“tree”,”bush”,”flower”,”grass”,”weed”,”crop”]
+	},
+	“foodstuff”:{
+		examples:[“fruit”,”vegetable”,”nuts”,”meat”,”cake”,”confectionary”,”cereal”]
+	},
+	“tree”:{
+		isa:[“plant”],has:[“trunk”,”branch”,”leaf”,”canopy”]
+	},
+	“foliage”:{}
+	“vegetation”:{isa:["plant"],examples:[“tree”,”bush”,”grass”]}
+	“water”:{examples:[“river”,”lake”,”sea”,”puddle”,”fountain spray”]}
+	“sky”:{has:[“cloud”,”sun”,”aircraft”,”moon”,”stars”,”bird”]}
+	“person”:{
+		isa:[“animal”],
+		examples:[“man”,”woman”,”boy”,”girl”,”child”,”baby”],
+		has:[“arm”,”leg”,”torso”,"clothing"],
+		states:[”walking”,”standing”,”sitting”,”running”,”lying”,”kneeling”,”reclining”],
+		plural:["people","crowd"],
+	},
+	“building”:{
+		isa:[“man made object”],
+		has:[“roof”,”window”,”door”,”pillar”,”tower”],
+		examples:[“house”,”church”,”cathedral”,”warehouse”,”factory”,
+		”tower block”,”sky scraper”,”stadium”,”shop”,”control tower”,"multi-storey car park","shopping mall","shopping arcade",		
+		”airport terminal”,”train station”,”bus station”,
+		"depot","lighthouse","castle","hut","shed","bungalow",
+		]
+	},
+	“tall man made object”:{
+		examples:[
+			“utility pole”,
+			“telegraph pole”,
+			“street lamp”,
+			“lamp post”,
+			“electricity pylon”
+		]
+	},
+	“shelf”:{isa:[“furniture”]},
+	“till”:{isa:[“machine”]},
+	“ground features”:{examples:[“road”,”pavement”,”rail track”,”car park”,”driveway”]},
+	"traffic island":{}
+	"road":{examples:["country lane","dirt road","cobbled road","dual carriageway","motorway","flyover"]},
+	"footpath":{},
+	"cycle lane":{},
+
+	“ground”:{examples[
+		“lawn”,”carpet”,“grass”,”field”,”grass”,”mud”,”dirt”,”soil”,
+		”sand”,”pebbles”,”paved”,”cobbles”,”tiled”,
+		”tarmac”,”asphalt”,”stone”,”rock”,”gravel”,”shale”
+	]},
+	“geographic features”:{“river”,”sea”,”lake”,”cliff”,”hill”,”mountain”,”valley”,”volcano”,”cave”},
+	“urban objects”:{examples:[“traffic cone”,bollard”,”fence”,”wall”,”gate”,”satellite dish”,”aerial”]},
+	“radio tower”:{isa:[”tower”]},
+	“room”:{
+		examples:[
+				“kitchen”,”living room”,”dining room”,”hallway”,"corridor","atrium",
+				”study”,”library”,”store room”,”cellar”,
+				”bedroom”,"bathroom","watercloset","bedsit",”board room”,”office”,"reception","waiting room"
+		],
+	},
+	"office chair":{
+		isa:["chair"],
+		has:["castor wheel","gas lift"]
+	},
+	“area”:{examples:[
+		“rural area”,”urban area”,”suburb”,”town centre”,”city”,”village”,
+		”town”,”camp”,”airport”,”industrial area”,”forest”,”jungle”,
+		”mountainous area”,”hilly area”,”wilderness”,”plains”,
+		"harbour","beach","resort","farm","countryside","nature reserve",
+	]},
+	"rolling stock":{
+		isa:["vehicle"],
+		examples:[
+			"tram","streetcar","locomotive","rolling stock",
+			"goods wagon","freight waggon","Mineral wagon","hopper car",
+			"passenger rail car",
+		]
+	},
+	"dam":{},
+	"cash register":{},
+	"terminal":{},
+	"point of sale terminal":{},
+	"bridge":{examples:["suspension bridge","footbridge"]},
+	"power station":{examples:["coal powered powerstation","nuclear powerstation"]},
+	"wind turbine":{isa:["renewable energy system"]},
+	"solar panel":{isa:["renewable energy system"]},
+	"solar concentrator":{isa:["renewable energy system"]},
+	"hydroelectric dam":{isa:["renewable energy system"]},
+	"waterwheel":{isa:["renewable energy system"]},
+	"windmill":{isa:["renewable energy system"]},
+	"traffic light":{"machine"},
+	"road sign":{examples:[
+		"stop sign","no entry sign","parking","no parking",
+		"speed limit sign","end of speed limit zone","pedestrian crossing sign","hazard warning"
+	]},
+	"revolving door":{isa:["door"]},
+	"double doors":{isa:["door"]},
+	"glass door":{isa:["door"]},
+	"turnstyle":{},
+	"pedestrian crossing":{},
+	"zebra crossing":{},
+	"level crossing":{},
+	"roundabout":{},
+	"T junction":{},
+	"parking space":{},
+	"junction":{},
+	"rubble":{},
+	"debris":{},
+	"trash":{},
+	"waste container":{},
+	"bin":{
+		isa:["waste container"],
+		examples:[	
+		"dustbin","wheelie bin","waste paper basket","pedal bin","flip top bin","recycling bin"
+	]},
+	"bottle bank":{},
+	"architectural feature":{examples:[
+		"archway","pillar","buttress","flying buttress","balcony",
+		"spire","dome","onion dome","chimney","battlements","door",
+	]},
+	"roadworks":{},
+	"construction site":{},
+	"scaffholding":{},
+	"steel beam":{},
+	"pier":{},
+	"statue":{},
+	"monument":{},
+	"crucafix":{},
+	"jetty":{},
+	"embankment":{},
+	"verge":{},
+	"clock face":{},
+	"bell":{},
+	"water well":{},
+	"optical instrument":{examples:[
+		"binoculars","telescope","magnifying glass","microscope"
+	]},
+	"clothing":{examples:[
+		"hat","scarf","jacket","coat","trousers","shorts",
+		"t-shirt","shirt","skirt","dress","jumper","gloves"
+	]}
+	"book":{},
+	"electronics":{examples:[
+		"PC","laptop","tablet","smartphone","television","computer monitor",
+		"digital camera","camcorder","headphones","USB stick","memory card","cable"
+	]},
+	"computer peripheral":{
+		isa:["electronics"],
+		examples:[
+			"keyboard", "computer mouse","speakers"
+		]
+	},
+	"computer component":{
+		examples:[
+			"hard drive","graphics card","motherbaord",
+			"memory module","cpu","power supply"
+		]
+	},
+	"monitor stand":{},
+	"runway":{},
+	"hangar":{},
+	"workbench":{},
+	"lathe":{},
+	"vice":{},
+	"bin lid":{},
+	"plant pot":{},
+	"lantern":{},
+	"ramp":{},
+	"flowerpot":{},
+	"flower basket":{},
+	"skip":{isa:["waste container"]},
+	"building material":{examples:[
+		"concrete","brick","breeze block","tile",
+		"roof tile","stone","paving stone"
+	]},
+	"animal surface":{examples:["feathers","scales","fur","skin"]},
+	"shadow":{},
+	"rock":{},
+	"grass":{
+		isa:["vegetation"],
+		examples:["dry grass","short grass","long grass","wild grass"]},
+	"material":{examples:[
+		"plastic","metal","corrugated metal","rusty metal",
+		"rubber","wood","chipboard","plaster","concrete","glass","stone",
+		"slate","shale","clay","limestone","sandstone","granite","rock",
+		"pebble","textile","wool","synthetic fibre","nylon"
+	]},
+	"geological features":{
+		examples:["stalegmite","stalegtite","rock","pothole","cave","mountain","valley"]
+	}
+}
+
+
+
