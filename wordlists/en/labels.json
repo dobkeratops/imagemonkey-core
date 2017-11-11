@@ -1,41 +1,41 @@
 {
-	“vehicle”:{ isa:[“machine”]},
-	"wheeled vehicle”:{
-		isa:["vehicle”],
-		has:["wheel”],
+	"vehicle":{ isa:["machine"]},
+	"wheeled vehicle":{
+		isa:["vehicle"],
+		has:["wheel"],
 		plural:["traffic"]
 	},
-	"car”:{
-		isa:[”wheeled vehicle”],
+	"car":{
+		isa:["wheeled vehicle"],
 		synonyms:["automobile"],
 		has:[
-			"wheels”,”bonnet”,”headlights”,”tail lights”,
-			”wing mirrors”,”door”,”windscreen”,
-			”window”,”badge”,”license plate”,”grille”,
-			"exhaust”,”roof”,"seat","stearing wheel","dashboard"]
+			"wheels","bonnet","headlights","tail lights",
+			"wing mirrors","door","windscreen",
+			"window","badge","license plate","grille",
+			"exhaust","roof","seat","stearing wheel","dashboard"]
 		examples:[
-			"hatchback”,”SUV”,”sports car”,”grand tourer”,
-			”saloon”,”sedan”,”fastback”,”convertible”,”estate”,"coupe",
-			”minivan”,”people carrier”,"pickup truck"
+			"hatchback”,"SUV","sports car","grand tourer",
+			"saloon","sedan","fastback","convertible","estate","coupe",
+			"minivan","people carrier","pickup truck"
 		],
-		states:["parked”,”driving”,”open”}
+		states:["parked","driving","open"}
 	},
-	"truck”:{isa:[”wheeled vehicle”],synonyms:["lorry"]},
+	"truck":{isa:["wheeled vehicle"],synonyms:["lorry"]},
 	"articulated vehicle":{isa:{"vehicle"}},
 	"passenger vehicle":{isa:{"vehicle"}},
 	"bus":{isa:["passenger vehicle"]},
 	"trailer":{isa:["vehicle"]},
 	"semi-trailer":{isa:["trailer"]},
-	"semi-trailer truck”:{
-		isa:["truck”,"articulated vehicle"],
-		has:["cabin”,”semi-trailer”],
+	"semi-trailer truck":{
+		isa:["truck","articulated vehicle"],
+		has:["cabin","semi-trailer"],
 		synonyms:["articulated lorry"]
 	},
 	"tipping truck":{isa:["truck"]},
 	"garbage truck":{isa:["truck"]},
-	"agricultural vehicle”:{isa:[vehicle]},
-	"tractor:{isa:["agricultural vehicle”]},
-	"combine harvester”:{isa:["agricultural vehicle”]},
+	"agricultural vehicle":{isa:[vehicle]},
+	"tractor:{isa:["agricultural vehicle"]},
+	"combine harvester":{isa:["agricultural vehicle"]},
 	"heavy equipment":{
 		isa:["machine"],
 		examples:["digger","bulldozer","excavator","road roller"]
@@ -50,45 +50,45 @@
 		has:["shovel","hydraulic ram","catepillar tracks"]
 	},
 
-	"pedal powered vehicle”:{
-		isa:[”vehicle”],
-		has:["pedal”,”handlebars”,”saddle”]
+	"pedal powered vehicle":{
+		isa:["vehicle"],
+		has:["pedal","handlebars","saddle"]
 	},
-	"tricycle”:{isa:["pedal powered vehicle”]}
+	"tricycle":{isa:["pedal powered vehicle"]}
 	"two wheeled vehicle":{
 		isa:"vehicle"},
 		has:["wheel"]
 	}
-	"bicycle”:{
-		isa:["two wheeled vehicle”,”pedal powered vehicle”],
-		has:["wheel”,”handlebars”,”brake lever”,”gear lever”,”saddle”,”chain”,”mud guard”,”pedal”,”derailleur”,”chainring”,”frame”,"mudguard"],
-		examples:["recumbent bike”,”road bike”,”touring bike”,"hybrid bike",”city bike”,”mountain bike”,”bmx”,”tandem”,”track bike”]
+	"bicycle":{
+		isa:["two wheeled vehicle","pedal powered vehicle"],
+		has:["wheel","handlebars","brake lever","gear lever","saddle","chain","mud guard","pedal","derailleur","chainring","frame","mudguard"],
+		examples:["recumbent bike","road bike","touring bike","hybrid bike","city bike","mountain bike","bmx","tandem","track bike"]
 	},
 	"road bike":{isa:{"bicycle"},synonyms:["racing bike"],has:["drop handlebars"]},
 	"handlebars:{examples:["drop handlebars","flat handlebar","riser bar","bullhorn bar","tri bars"]},
-	"motor bike”:{
-		isa:["two wheeld vehicle”],
-		has:["handlebars”,”saddle”,”exhaust”,”fuel tank”,”engine”]
+	"motor bike":{
+		isa:["two wheeld vehicle"],
+		has:["handlebars","saddle","exhaust","fuel tank","engine"]
 	},
-	"motor scooter”:{isa:["motor bike"]},
-	"bodypart”:{
-		examples:["head”,”tail”,”arm”,”leg”,”foot”,”hand”,”neck”,”torso”,"shoulder","hips","spine"]
+	"motor scooter":{isa:["motor bike"]},
+	"bodypart":{
+		examples:["head","tail","arm","leg","foot","hand","neck","torso","shoulder","hips","spine"]
 	},
 	"arm":{isa:["bodypart"],has:["hand","wrist","elbow","forearm","upper arm"]}
 	"leg":{isa:["bodypart"],has:["foot","ankle","knee","shin","thigh"]}
-	"leg”:{
-		examples:["foreleg”,”hind leg”]
+	"leg":{
+		examples:["foreleg","hind leg"]
 	},
-	"head”:{
-		isa:["bodypart”],
-		has:["eye”,”mouth”,”ear”,”nose”]
+	"head":{
+		isa:["bodypart"],
+		has:["eye","mouth","ear","nose"]
 	},
-	"quadruped”:{
-		isa:["animal”],
-		has:["head”,”tail”,”forelegs”,”hind legs”],
+	"quadruped":{
+		isa:["animal"],
+		has:["head","tail","forelegs","hind legs"],
 	},
-	"dog”:{
-		isa:["animal”,”quadruped”,”domesticated”,”carnivore”],
+	"dog":{
+		isa:["animal","quadruped","domesticated","carnivore"],
 		examples:["labrador","terrier","poodle","german shephard","bulldog"]
 	},
 	"livestock":{
@@ -99,70 +99,70 @@
 	"donkey":{isa:["quadruped","mamal","domesticated"]},
 	"vertebrate":{examples:["mamal","reptile","fish","bird"]}
 	"invertebrate":{examples:["worm","molusc","insect","arachnid"]}
-	"animal”:{ isa:["organism”],examples:["vertebrate","invertebrate"]},
-	"carnivore”:{ isa:["organism”]},
+	"animal":{ isa:["organism"],examples:["vertebrate","invertebrate"]},
+	"carnivore":{ isa:["organism"]},
 	"arthropod":{isa:["invertebrate"],has:["exoskeleton"]}
 	"insect":{isa:["arthropod"],examples:["ant","beetle","bee","wasp","butterfly","earwig"]},
 	"spider:{isa:["arthropod"]},
 	"snail":{isa:["molusc"]},
 	"crab":{isa:["arthropod"],has:["pincer"]},
 	"lobster":{isa:["arthropod"],has:["pincer"]},
-	"feline”:{
-		isa:["quadruped”,”animal”,”carnivore”]
+	"feline":{
+		isa:["quadruped","animal","carnivore"]
 	},
-	"domestic cat”:{
-		isa:["felinae”]
+	"domestic cat":{
+		isa:["felinae"]
 	},
-	"big cat”:{
-		isa:["felinae”],
+	"big cat":{
+		isa:["felinae"],
 		examples:["lion","tiger","panther","cheetah","lynx"]
 	},
-	"machine”:{
+	"machine":{
 		isa:["man made object"]
 	},
-	"tool”:{
-		isa:["man made object”]
+	"tool":{
+		isa:["man made object"]
 	},
-	"hammer”:{
-		isa:["tool”],
-		has:["handle”]
+	"hammer":{
+		isa:["tool"],
+		has:["handle"]
 	},
 	"cutting tool":{isa:["tool"], has:["blade","handle"]},
 	"axe":{isa:["cutting tool"]},
 	"saw":{isa:["cutting tool"]},
 	"hacksaw":{isa:["saw"]},
 
-	"spanner”:{
-		isa:["tool”],
-		has:["handle”]
+	"spanner":{
+		isa:["tool"],
+		has:["handle"]
 	},
-	"drill”:{isa:”tool”,has:["drill bit"]},
-	"handdrill”:{isa:[”drill”],has:["hand crank"]},
-	"powerdrill”:{isa:[”drill”]},
+	"drill":{isa:"tool",has:["drill bit"]},
+	"handdrill":{isa:["drill"],has:["hand crank"]},
+	"powerdrill":{isa:["drill"]},
 
 	"marque":{
 		examples:[
-			”renault”,"citroen",
-			"volkswagen",”bmw”,”mercedes”,"audi","porsche",
-			"fiat”,"ferrari","maserati","lamborghini",
-			"ford","chevrolet”,”general motors”,
-			"hyundai",”mitsubishi”,”acura”,”nissan”,"toyoya","mazda","subaru",
-			”rolls royce”,”jaguar”,"bentley"]
+			"renault","citroen",
+			"volkswagen","bmw","mercedes","audi","porsche",
+			"fiat","ferrari","maserati","lamborghini",
+			"ford","chevrolet","general motors",
+			"hyundai","mitsubishi","acura","nissan","toyoya","mazda","subaru",
+			"rolls royce","jaguar","bentley"]
 	}
-	"mid engine sportscar”:{
-		isa:["sportscar”],
+	"mid engine sportscar":{
+		isa:["sportscar"],
 		examples:["porsche boxster","porsche cayman","lotus elise"],
 	},
-	"rear engine sportscar”:{
-		isa:["sportscar”],
-		examples:["porsche 911”]
+	"rear engine sportscar":{
+		isa:["sportscar"],
+		examples:["porsche 911"]
 	},
-	"furniture”:{examples:["table”,”chair”,”bench”,”stool”,”bed”,”cupboard”,”footrest”,”sofa”,”desk”]}
-	"dining table”:{isa:["table”]}
-	"desk”:{isa:["table”]}
-	"round table”:{isa:["table”]}
-	"cutlery”:{isa:["tool”],examples:["knife”,”fork”,”spoon”,”spork”]}
-	"carving knife”:{isa:[”knife”]}
+	"furniture":{examples:["table","chair","bench","stool","bed","cupboard","footrest","sofa","desk"]}
+	"dining table":{isa:["table"]}
+	"desk":{isa:["table"]}
+	"round table":{isa:["table"]}
+	"cutlery":{isa:["tool"],examples:["knife","fork","spoon","spork"]}
+	"carving knife":{isa:["knife"]}
 	"dinner plate":{},
 	"bowl":{},
 	"serving bowl":{},
@@ -187,75 +187,75 @@
 	"staircase":{},
 	"escalator":{},
 	"elevator":{},
-	"aircraft”:{
-		isa:["vehicle”],
-		states:["parked”,”taxying”,”take off”,”landing”,”flying”]
+	"aircraft":{
+		isa:["vehicle"],
+		states:["parked","taxying","take off","landing","flying"]
 	}
-	"helicopter”:{
-		isa:["aircraft”],
-		has:["cockpit”,”tail boom”,”tail rotor”,”rotor blades”,”landing gear”]
+	"helicopter":{
+		isa:["aircraft"],
+		has:["cockpit","tail boom","tail rotor","rotor blades","landing gear"]
 	}
-	"aeroplane”:{
-		isa:["aircraft”],
-		has:["wing”,”cockpit”,”tail fin”]
+	"aeroplane":{
+		isa:["aircraft"],
+		has:["wing","cockpit","tail fin"]
 	}
-	"glider”:{isa:[”aeroplane”]},
-	"jet aircraft”:{isa:[”aeroplane”],has:["jet engine”]},
-	"passenger jet”:{isa:[”jet aircraft”],has:["passenger window”]},
-	"private jet”:{isa:[”passenger jet”]},
+	"glider":{isa:["aeroplane"]},
+	"jet aircraft":{isa:["aeroplane"],has:["jet engine"]},
+	"passenger jet":{isa:["jet aircraft"],has:["passenger window"]},
+	"private jet":{isa:["passenger jet"]},
 	"hot air baloon":{isa:["aircraft"]},
 	"airship":{isa:["aircraft"]},
 	"quadcopter":{isa:["aircraft"]},
-	"jet airliner”:{isa:[”aircraft”]},
-	"light aircraft”:{
-		isa:[”aeroplane”],
-		has:["propeller”]
+	"jet airliner":{isa:["aircraft"]},
+	"light aircraft":{
+		isa:["aeroplane"],
+		has:["propeller"]
 	}
-	"fighter jet”:{
-		isa:”jet aircraft”,
-		examples:["f16”,”mig”,”eurofighter typhoon”]
+	"fighter jet":{
+		isa:"jet aircraft",
+		examples:["f16","mig","eurofighter typhoon"]
 	},
-	"plant”:{
-		isa:["organism”], 
-		examples:["tree”,”bush”,”flower”,”grass”,”weed”,”crop”]
+	"plant":{
+		isa:["organism"], 
+		examples:["tree","bush","flower","grass","weed","crop"]
 	},
-	"foodstuff”:{
-		examples:["fruit”,”vegetable”,”nuts”,”meat”,”cake”,”confectionary”,”cereal”]
+	"foodstuff":{
+		examples:["fruit","vegetable","nuts","meat","cake","confectionary","cereal"]
 	},
-	"tree”:{
-		isa:["plant”],has:["trunk”,”branch”,”leaf”,”canopy”]
+	"tree":{
+		isa:["plant"],has:["trunk","branch","leaf","canopy"]
 	},
-	"foliage”:{}
-	"vegetation”:{isa:["plant"],examples:["tree”,”bush”,”grass”]}
-	"water”:{examples:["river”,”lake”,”sea”,”puddle”,”fountain spray”]}
-	"sky”:{has:["cloud”,”sun”,”aircraft”,”moon”,”stars”,”bird”]}
-	"person”:{
-		isa:["animal”],
-		examples:["man”,”woman”,”boy”,”girl”,”child”,”baby”],
-		has:["arm”,”leg”,”torso”,"clothing"],
-		states:[”walking”,”standing”,”sitting”,”running”,”lying”,”kneeling”,”reclining”],
+	"foliage":{}
+	"vegetation":{isa:["plant"],examples:["tree","bush","grass"]}
+	"water":{examples:["river","lake","sea","puddle","fountain spray"]}
+	"sky":{has:["cloud","sun","aircraft","moon","stars","bird"]}
+	"person":{
+		isa:["animal"],
+		examples:["man","woman","boy","girl","child","baby"],
+		has:["arm","leg","torso","clothing"],
+		states:["walking","standing","sitting","running","lying","kneeling","reclining"],
 		plural:["people","crowd"],
 	},
-	"building”:{
-		isa:["man made object”],
-		has:["roof”,”window”,”door”,”pillar”,”tower”],
-		examples:["house”,”church”,”cathedral”,”warehouse”,”factory”,
-		”tower block”,”sky scraper”,”stadium”,”shop”,”control tower”,"multi-storey car park","shopping mall","shopping arcade",		
-		”airport terminal”,”train station”,”bus station”,
+	"building":{
+		isa:["man made object"],
+		has:["roof","window","door","pillar","tower"],
+		examples:["house","church","cathedral","warehouse","factory",
+		"tower block","sky scraper","stadium","shop","control tower","multi-storey car park","shopping mall","shopping arcade",		
+		"airport terminal","train station","bus station",
 		"depot","lighthouse","castle","hut","shed","bungalow",
 		]
 	},
-	"tall man made object”:{
+	"tall man made object":{
 		examples:[
-			"utility pole”,
-			"telegraph pole”,
-			"street lamp”,
-			"lamp post”,
-			"electricity pylon”
+			"utility pole",
+			"telegraph pole",
+			"street lamp",
+			"lamp post",
+			"electricity pylon"
 		]
 	},
-	"shelf”:{isa:["furniture”]},
-	"till”:{isa:["machine"]},
+	"shelf":{isa:["furniture"]},
+	"till":{isa:["machine"]},
 	"ground features":{examples:["road","pavement","rail track","car park","driveway"]},
 	"traffic island":{}
 	"road":{examples:["country lane","dirt road","cobbled road","dual carriageway","motorway","flyover"]},
