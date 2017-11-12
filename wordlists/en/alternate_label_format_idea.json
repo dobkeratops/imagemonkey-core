@@ -206,7 +206,8 @@
 	"hot air baloon":{isa:["aircraft"]},
 	"airship":{isa:["aircraft"]},
 	"quadcopter":{isa:["aircraft"]},
-	"jet airliner":{isa:["aircraft"]},
+	"jet airliner":{isa:["passenger jet"]},
+	"jumbo jet":{isa:["jet airliner"]},
 	"light aircraft":{
 		isa:["aeroplane"],
 		has:["propeller"]
